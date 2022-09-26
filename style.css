@@ -1,0 +1,71 @@
+body {
+    background-color: #68B26E
+
+}
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+
+.todo-title {
+    display: flex;
+    width: 100 px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px;
+}
+
+.todo-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.todo-item{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px;
+}
+
+.todo-new-item {
+    display: flex;
+    background-color: rgb(217, 212, 239);
+    width: 99%;
+    height: 60px;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    box-shadow: 5px 10px 10px;
+    margin: 7px;
+}
+
+.todo-new-item > input {
+    background-color: #cee7d1;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.todo-item > input[type='checkbox']:checked + div {
+    text-decoration: line-through;
+}
